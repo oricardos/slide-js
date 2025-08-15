@@ -14,7 +14,7 @@ ul {
 
 img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
 }
 
 .slide {
