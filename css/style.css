@@ -4,9 +4,16 @@ body {
 
 .wrapper {
     overflow-x: hidden;
-    height: 100vh;
+    height: calc(100vh - 41px);
     display: flex;
     align-items: center;
+}
+
+.arrow-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 8px;
 }
 
 ul {
