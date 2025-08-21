@@ -6,7 +6,8 @@ body {
     overflow-x: hidden;
     height: calc(100vh - 41px);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .arrow-nav {
@@ -51,4 +52,25 @@ img {
 .slide li.active {
     opacity: 1;
     transform: scale(1)
+}
+
+[data-control="slide"]{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fb5;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -999px;
+    margin: 5px;
+}
+
+[data-control="slide"] li.active a, [data-control="slide"] li a:hover {
+    background-color: #E54;
 }
